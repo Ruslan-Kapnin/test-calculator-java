@@ -85,6 +85,8 @@ public class Main {
     //Проверяет является ли строка числом, определяет тип - Римские или Арабские.
     // Возвращает Арабское число или выдает ошибку
     static int checkNum (String sNum){
+        //Удаляет пробелы из sNum
+        sNum = sNum.replaceAll("\\s", "");
         int num = -1;
         //Пробует найти sNum в rUnits
         for(String n : rUnits){
